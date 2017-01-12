@@ -202,7 +202,7 @@ a:hover, .current {
   font-family: 'Soleil-Bold', Verdana, sans-serif;
   border: none;
   padding: 0.25rem;
-  line-height: 1.25;
+  height: 1.75rem;
   border-radius: 0;
 }
 .standard .paypal-btn {
