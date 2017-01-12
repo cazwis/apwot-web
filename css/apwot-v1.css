@@ -13,6 +13,49 @@ Colours:
   Black: #000000
 ---------------------------*/
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3330523, 2017-01-12T05:56:30-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: TwCenMTStd-Bold by Monotype
+ * URL: http://www.myfonts.com/fonts/mti/twentieth-century-mt/std-bold/
+ * Copyright: Font software Copyright 1997 Adobe Systems Incorporated. Typeface designs Copyright 1997 The Monotype Corporation. All rights reserved.
+ *
+ * Webfont: Soleil-Bold by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/soleil/bold/
+ * Copyright: Copyright (c) 2011 by Wolfgang Homola, distributed by TypeTogether. All rights reserved.
+ *
+ * Webfont: Soleil by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/soleil/regular/
+ * Copyright: Copyright (c) 2011 by Wolfgang Homola, distributed by TypeTogether. All rights reserved.
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3330523
+ * Licensed pageviews: 250,000
+ *
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/32d1db");
+
+  
+@font-face {font-family: 'TwCenMTStd-Bold';src: url('/assets/webfonts/32D1DB_0_0.eot');src: url('/assets/webfonts/32D1DB_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_0_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_0_0.woff') format('woff'),url('/assets/webfonts/32D1DB_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Soleil-Bold';src: url('/assets/webfonts/32D1DB_1_0.eot');src: url('/assets/webfonts/32D1DB_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_1_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_1_0.woff') format('woff'),url('/assets/webfonts/32D1DB_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Soleil';src: url('/assets/webfonts/32D1DB_2_0.eot');src: url('/assets/webfonts/32D1DB_2_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_2_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_2_0.woff') format('woff'),url('/assets/webfonts/32D1DB_2_0.ttf') format('truetype');}
+ 
+
 html {
  height:100%;
  min-height:100%;
@@ -23,7 +66,8 @@ body {
   min-height: 100%;
   font-size: 1rem;
   line-height: 1.35;
-  font-family: Verdana, sans-serif;
+  font-family: 'Soleil', Verdana, sans-serif;
+    font-family: 'Soleil', monospace;
   font-style: normal;
   font-feature-settings: "liga" 0, "clig" 0;
   -webkit-font-smoothing: antialiased;
@@ -50,6 +94,9 @@ img {
   padding: 1rem;
   max-width: 60rem;
   min-height: 100%;
+}
+header {
+  font-family: 'TwCenMTStd-Bold', Verdana, sans-serif;
 }
 main .grid-col, header {
   margin-bottom: 1rem;
@@ -84,6 +131,7 @@ p:last-child {
   margin-bottom: 0;
 }
 b, .type-bold {
+  font-family: 'Soleil-Bold', Verdana, sans-serif;
   font-weight: 900 !important;
 }
 h1, h2 {
