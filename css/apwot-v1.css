@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Author  : We Sort / Ben Edmonds
+URL     : wesort.co.uk
+Twitter : @we_sort
+*/
+
+/* 		This stylesheet builds on top of reset-n-grid.css
+Colours:
+  White: #FFFFFF
+  Black: #000000
+---------------------------*/
+
+html {
+ height:100%;
+ min-height:100%;
+ overflow-y: scroll;
+ }
+body {
+  height: 100%;
+  min-height: 100%;
+  font-size: 1rem;
+  line-height: 1.35;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-feature-settings: "liga" 0, "clig" 0;
+  -webkit-font-smoothing: antialiased;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+img {
+  width: 100%;
+}
+.print-only {
+  display: none;
+}
+.ie-only.notice {
+  font-size: 1rem;
+  border: 1px solid #999999;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Header, Homepage,  Footer
+---------------------------*/
+#page {
+  margin:0 auto;
+  padding: 1rem;
+  max-width: 60rem;
+  min-height: 100%;
+}
+main .grid-col, header {
+  margin-bottom: 1rem;
+}
+nav li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+nav li:last-child {
+  padding-right: 0;
+}
+.logo-wrap {
+
+}
+.logo {
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url(/assets/.svg);
+  height: 6rem;
+  width: 6rem;
+}
+
+
+
+/*  Typography
+---------------------------*/
+p, .mb-single {
+  margin-bottom: 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+b, .type-bold {
+  font-weight: 900 !important;
+}
+h1, h2 {
+  font-size: 1.5rem;
+
+}
+a {
+  color: red;
+  text-decoration: none;
+}
+a:hover, .current {
+  color: green;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+                          BREAKPOINTS
+---------------- Set here AND reset-n-grid.css  ---------------
+
+/* -- Breakpoint (.bp1)
+-- Same as above, but each class has ".bp1-" prefix
+------------------------------------------------------------- */
+@media only screen and (min-width: 30em) {
+
+}
+/* -- Breakpoint (.bp2)
+------------------------------------------------------------- */
+@media only screen and (min-width: 44em) {
+#page {
+  padding: 2rem;
+}
+
+
+
+/* -- Breakpoint 3 (.bp3)
+------------------------------------------------------------- */
+@media only screen and (min-width: 60em) {
+
+}
+
+/* -- Breakpoint 4 (.bp4)
+------------------------------------------------------------- */
+@media only screen and (min-width: 90em) {
+
+
+}
+
+
+
+/* Print specific styles
+------------------------------------------------------------- */
+@media print {
+/* Styles */
+.print-only {
+  display: block;
+}
+.print-none {
+  display: none;
+}
+* {
+  -webkit-print-color-adjust: exact;
+  background-color: none;
+  color: #000000 !important;
+  font-size: 18pt;
+}
+a {
+  color: #666666 !important;
+  text-decoration: none !important;
+  border-bottom: none;
+}
+a:after {
+  font-size: 10pt;
+  content: " [" attr(href) "]";
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+img {
+  display: block;
+  page-break-inside: avoid !important;
+}
+
+
+}
+
+
+/*  END  */
