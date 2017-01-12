@@ -80,6 +80,9 @@ body {
 img {
   width: 100%;
 }
+img.no-max {
+  width: initial;
+}
 .print-only {
   display: none;
 }
