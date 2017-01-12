@@ -30,6 +30,9 @@
 <meta name="twitter:creator" content="">
 <meta name="twitter:image" property="og:image" content="">
 
+<style>
+
+</style>
 
 </head>
 
@@ -52,9 +55,9 @@
 <div class="grid-col col-1-1 bp2-col-1-2">
   <nav class="first">
     <ul>
-    <li><a href="/killing-time" class="">Killing Time</a></li>
-    <li><a href="/who-we-are" class="">Who We are</a></li>
-    <li><a href="/contact" class="">Contact</a></li>
+    <li><a href="#about" class="scroll">About</a></li>
+    <li><a href="#contact" class="scroll">Contact</a></li>
+    <li><a href="#newsletter" class="scroll">Newsletter</a></li>
     </ul>
   </nav>
 </div>
@@ -67,10 +70,17 @@
 <main>
 <div class="grid-wrap">
 
-<div class="grid-col col-1-1">
+<div class="grid-col col-1-1" id="about">
+  About
 </div>
 
+<div class="grid-col col-1-1" id="contact">
+  Contact
+</div>
 
+<div class="grid-col col-1-1" id="newsletter">
+  Newsletter
+</div>
 
 </div><!-- end .grid-wrap for main -->
 </main>
@@ -104,6 +114,23 @@ window.onload = function () {
     b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
   }
 };
+
+// Smooth scroll to an anchor
+// ref: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 600);
+        return false;
+      }
+    }
+  });
+});
 </script>
 
 <!-- Google Analytics -->
