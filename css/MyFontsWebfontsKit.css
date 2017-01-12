@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3330523, 2017-01-12T05:56:30-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: TwCenMTStd-Bold by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/twentieth-century-mt/std-bold/
+ * Copyright: Font software Copyright 1997 Adobe Systems Incorporated. Typeface designs Copyright 1997 The Monotype Corporation. All rights reserved.
+ * 
+ * Webfont: Soleil-Bold by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/soleil/bold/
+ * Copyright: Copyright (c) 2011 by Wolfgang Homola, distributed by TypeTogether. All rights reserved.
+ * 
+ * Webfont: Soleil by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/soleil/regular/
+ * Copyright: Copyright (c) 2011 by Wolfgang Homola, distributed by TypeTogether. All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3330523
+ * Licensed pageviews: 250,000
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/32d1db");
+
+  
+@font-face {font-family: 'TwCenMTStd-Bold';src: url('webfonts/32D1DB_0_0.eot');src: url('webfonts/32D1DB_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/32D1DB_0_0.woff2') format('woff2'),url('webfonts/32D1DB_0_0.woff') format('woff'),url('webfonts/32D1DB_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Soleil-Bold';src: url('webfonts/32D1DB_1_0.eot');src: url('webfonts/32D1DB_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/32D1DB_1_0.woff2') format('woff2'),url('webfonts/32D1DB_1_0.woff') format('woff'),url('webfonts/32D1DB_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Soleil';src: url('webfonts/32D1DB_2_0.eot');src: url('webfonts/32D1DB_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/32D1DB_2_0.woff2') format('woff2'),url('webfonts/32D1DB_2_0.woff') format('woff'),url('webfonts/32D1DB_2_0.ttf') format('truetype');}
+ 
