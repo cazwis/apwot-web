@@ -71,7 +71,6 @@ body {
   font-size: 1.25rem;
   line-height: 1.35;
   font-family: 'Soleil', Verdana, sans-serif;
-    font-family: 'Soleil', monospace;
   font-style: normal;
   font-feature-settings: "liga" 0, "clig" 0;
   -webkit-font-smoothing: antialiased;
@@ -160,6 +159,9 @@ a {
 a:hover, .current {
   color: #FFFFFF;
 }
+
+/*  PayPal
+---------------------------*/
 .button {
   display: table;
   color: #001B2B;
@@ -210,6 +212,34 @@ a:hover, .current {
 }
 .special-edition .paypal-btn {
   background: #E87570;
+}
+
+/*  Mailchimp
+---------------------------*/
+.width-input {
+  width: 20rem;
+}
+
+#mc_embed_signup input {
+  font-family: 'Soleil', Verdana, sans-serif;
+  font-size: inherit;
+  border: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.1rem 0.25rem;
+  background: #666666;
+  color: #E87570;
+  margin-bottom: 1rem;
+}
+#mc_embed_signup .submit-button {
+  cursor: pointer;
+  font-size: inherit;
+  background: #E87570;
+  color: #001B2B;
+  font-family: 'Soleil-Bold', Verdana, sans-serif;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem 0.6rem;
 }
 
 /* ------------------------------------------------------------
