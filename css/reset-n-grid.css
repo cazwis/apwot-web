@@ -226,7 +226,7 @@ li.grid-col { margin-left: 0; }
 /* -- Breakpoint (.bp1)
 -- Same as above, but each class has ".bp1-" prefix
 ------------------------------------------------------------- */
-@media only screen and (min-width: 36rem) {
+@media only screen and (min-width: 30rem) {
 /* Gutters */
 .bp1-reset-gutter { margin-left: -1rem; }
 	.bp1-reset-gutter .grid-col { padding-left: 1rem; }
@@ -326,7 +326,7 @@ li.grid-col { margin-left: 0; }
 
 /* -- Breakpoint 2 (.bp2)
 ------------------------------------------------------------- */
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 48rem) {
 /* Gutters */
 .bp2-reset-gutter { margin-left: -1rem; }
 	.bp2-reset-gutter .grid-col { padding-left: 1rem; }
@@ -427,7 +427,7 @@ li.grid-col { margin-left: 0; }
 
 /* -- Breakpoint 3 (.bp3)
 ------------------------------------------------------------- */
-@media only screen and (min-width: 81rem) {
+@media only screen and (min-width: 60rem) {
 /* Gutters */
 .bp3-reset-gutter { margin-left: -1rem; }
 	.bp3-reset-gutter .grid-col { padding-left: 1rem; }
