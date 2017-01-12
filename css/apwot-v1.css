@@ -115,7 +115,7 @@ nav li:last-child {
   background-size: contain;
   background-position: top left;
   background-repeat: no-repeat;
-  background-image: url(/assets/.svg);
+  background-image: url(/assets/web-logo-v1.svg);
   height: 6rem;
   width: 6rem;
 }
