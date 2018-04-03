@@ -138,6 +138,26 @@ nav li:last-child {
 .mb-quad {
   margin-bottom: 4rem !important;
 }
+.image-wrap {
+  position: relative;
+}
+.first-image {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+}
+.second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.first-image:hover {
+  opacity: 0;
+  cursor: pointer;
+}
 
 
 
