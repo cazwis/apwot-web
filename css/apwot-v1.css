@@ -128,8 +128,9 @@ nav li:last-child {
 .logo span {
   display: none;
 }
-.candle-yellow {
-  color: #FBD793;
+.avatar-icon {
+  margin-top: 1rem;
+  width: 4rem;
 }
 
 
@@ -157,6 +158,9 @@ a {
 }
 a:hover, .current, header a:hover  {
   color: #2A53A1;
+}
+.bullets {
+  list-style: initial;
 }
 
 /*  PayPal
@@ -286,6 +290,10 @@ nav.first {
 .button.standard, .button.special-edition {
   background: #001B2B;
   color: #E87570;
+}
+.avatar-icon {
+  float: right;
+  margin-top: -4.75rem;
 }
 
 
