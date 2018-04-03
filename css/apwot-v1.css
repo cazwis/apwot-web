@@ -129,9 +129,16 @@ nav li:last-child {
   display: none;
 }
 .avatar-icon {
-  margin-top: 1rem;
-  width: 4rem;
+  /*margin-top: 1rem;*/
+  width: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
 }
+.mb-quad {
+  margin-bottom: 4rem !important;
+}
+
 
 
 /*  Typography
@@ -145,10 +152,14 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
+.centered p, .centered .bullets {
+  margin-left: auto;
+  margin-right: auto;
+}
 h1, h2 {
   font-weight: normal;
 }
-b, strong, .type-bold {
+b, strong, .type-bold, .issue-title {
   font-family: 'Soleil-Bold', Verdana, sans-serif;
 }
 a {
@@ -159,27 +170,29 @@ a {
 a:hover, .current, header a:hover  {
   color: #2A53A1;
 }
+.issue-title {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.2;
+}
 .bullets {
+  max-width: 50rem;
   list-style: initial;
+}
+.bullets li {
+    margin-left: 1rem;
 }
 
 /*  PayPal
 ---------------------------*/
 .button {
   display: table;
-  color: #001B2B;
+  color: #FFC400;
   background: #001B2B;
   padding: 0.5rem 1rem;
   text-align: center;
-  width: 100%;
   margin: 0 auto;
   border-radius: 0.25rem;
-}
-.button.standard {
-  background: #E87570;
-}
-.button.special-edition {
-  background: #2E7484;
 }
 .button tr {
   background: none !important;
@@ -210,11 +223,8 @@ a:hover, .current, header a:hover  {
   height: 1.75rem;
   border-radius: 0;
 }
-.standard .paypal-btn {
-  background: #2E7484;
-}
-.special-edition .paypal-btn {
-  background: #E87570;
+.standard .paypal-btn, .special-edition .paypal-btn {
+  background: #FFC400;
 }
 
 /*  Mailchimp
@@ -274,6 +284,9 @@ nav.first {
   border-bottom: 1px solid #000000;
   margin-right: 1rem;
 }
+.issue-title {
+  height: 5rem;
+}
 .left-indent {
   margin-left: 5rem;
   padding-right: 5rem;
@@ -281,26 +294,25 @@ nav.first {
 .left-border {
   border-left: 0.25rem solid;
 }
-.buttons-wrap {
-  margin-top: -11rem;
-}
-.button {
-  width: auto;
-}
 .button.standard, .button.special-edition {
-  background: #001B2B;
-  color: #E87570;
+  /*background: #001B2B;*/
+  color: #FFC400;
 }
 .avatar-icon {
-  float: right;
-  margin-top: -4.75rem;
+  /*float: right;*/
+  /*margin-top: -4.75rem;*/
+  width: 4rem;
+  right: 3rem;
 }
-
+}
 
 /* -- Breakpoint 3 (.bp3)
 ------------------------------------------------------------- */
-@media only screen and (min-width: 60em) {
-
+@media only screen and (min-width: 75em) {
+.avatar-icon {
+  right: unset;
+  left: calc(50% + 24.5em);
+}
 }
 
 /* -- Breakpoint 4 (.bp4)
