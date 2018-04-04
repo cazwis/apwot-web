@@ -300,12 +300,12 @@ main .grid-col {
 nav.first {
   float: right;
   margin: ;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  /*border-top: 1px solid #000000;*/
+  /*border-bottom: 1px solid #000000;*/
   margin-right: 1rem;
 }
 .issue-title {
-  height: 5rem;
+  height: 7rem;
 }
 .left-indent {
   margin-left: 5rem;
