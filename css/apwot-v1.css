@@ -159,6 +159,13 @@ nav li:last-child {
   cursor: pointer;
 }
 
+.shop-cover-image {
+  padding: 3rem 2rem;
+}
+.spread-image {
+  margin-bottom: 0 !important;
+}
+
 
 
 /*  Typography
@@ -283,7 +290,9 @@ a:hover, .current, header a:hover  {
 -- Same as above, but each class has ".bp1-" prefix
 ------------------------------------------------------------- */
 @media only screen and (min-width: 30em) {
-
+.shop-cover-image {
+  padding: 3rem 5rem;
+}
 }
 /* -- Breakpoint (.bp2)
 ------------------------------------------------------------- */
