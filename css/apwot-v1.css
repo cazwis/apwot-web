@@ -179,11 +179,15 @@ nav li:last-child {
 p {
   margin-bottom: 1rem;
 }
+p:last-child {
+  margin-bottom: 0;
+}
 p {
   max-width: 50rem;
 }
-p:last-child {
-  margin-bottom: 0;
+.left-indent p {
+  margin-left: auto;
+  margin-right: auto;
 }
 h1, h2 {
   font-weight: normal;
@@ -251,7 +255,11 @@ a:hover, .current, header a:hover  {
   height: 1.75rem;
   border-radius: 0;
 }
-.standard .paypal-btn, .special-edition .paypal-btn {
+.standard .paypal-btn,
+.special-edition .paypal-btn,
+#mc_embed_signup .submit-button,
+#mc_embed_signup input {
+  color: #FFC400;
   background: #000000;
 }
 
@@ -272,15 +280,11 @@ a:hover, .current, header a:hover  {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding: 0.1rem 0.25rem;
-  background: #002436;
-  color: #FFC400;
   margin-bottom: 1rem;
 }
 #mc_embed_signup .submit-button {
   cursor: pointer;
   font-size: inherit;
-  background: #002436;
-  color: #FFC400;
   font-family: 'Soleil-Bold', Verdana, sans-serif;
   border-radius: 0.25rem;
   padding: 0.75rem 1rem 0.6rem;
@@ -300,6 +304,7 @@ a:hover, .current, header a:hover  {
 .button-wrap {
   padding: 0 4.5rem;
 }
+
 }
 /* -- Breakpoint (.bp2)
 ------------------------------------------------------------- */
@@ -320,7 +325,7 @@ nav.first {
 .issue-title {
   height: 7rem;
 }
-.left-indent {
+.spec-creds {
   margin-left: 4rem;
   padding-right: 8rem;
 }
@@ -338,15 +343,19 @@ nav.first {
   right: 2rem;
   bottom: 2rem;
 }
+footer {
+  margin-top: -10rem;
+  padding-right: 5rem;
+}
 }
 
 /* -- Breakpoint 3 (.bp3)
 ------------------------------------------------------------- */
-@media only screen and (min-width: 85em) {
-.left-indent {
-  /*margin-left: 7.5rem;*/
-  /*padding-right: 15rem;*/
+@media only screen and (min-width: 75em) {
+
 }
+
+@media only screen and (min-width: 85em) {
 .avatar-icon {
   right: unset;
   left: calc(50% + 29em);
