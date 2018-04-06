@@ -188,7 +188,7 @@ p:last-child {
 h1, h2 {
   font-weight: normal;
 }
-b, strong, .type-bold, .issue-title {
+b, strong, .type-bold {
   font-family: 'Soleil-Bold', Verdana, sans-serif;
   font-weight: normal;
 }
@@ -237,9 +237,8 @@ a:hover, .current, header a:hover  {
   font-family: 'Soleil-Bold', Verdana, sans-serif;
   line-height: 1;
   text-align: center;
-  padding: 0.75rem 1rem;
+  padding: 0.9rem 1rem 0.75rem 1rem;
   margin-top: 2rem;
-  background: #FFFFFF;
   border-radius: 0.25rem;
   border: 0;
   cursor: pointer;
@@ -248,12 +247,12 @@ a:hover, .current, header a:hover  {
 .button-wrap select {
   font-family: 'Soleil-Bold', Verdana, sans-serif;
   border: none;
-  padding: 0.25rem;
+  padding: 0.35rem 0.25rem 0.25rem 0.25rem;
   height: 1.75rem;
   border-radius: 0;
 }
 .standard .paypal-btn, .special-edition .paypal-btn {
-  background: #002436;
+  background: #000000;
 }
 
 /*  Mailchimp
@@ -323,7 +322,7 @@ nav.first {
 }
 .left-indent {
   margin-left: 4rem;
-  padding-right: 4rem;
+  padding-right: 8rem;
 }
 .left-border {
   border-left: 0.25rem solid;
@@ -343,14 +342,14 @@ nav.first {
 
 /* -- Breakpoint 3 (.bp3)
 ------------------------------------------------------------- */
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 85em) {
 .left-indent {
-  margin-left: 10rem;
-  padding-right: 10rem;
+  /*margin-left: 7.5rem;*/
+  /*padding-right: 15rem;*/
 }
 .avatar-icon {
   right: unset;
-  left: calc(50% + 28.5em);
+  left: calc(50% + 29em);
 }
 }
 
