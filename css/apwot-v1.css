@@ -262,6 +262,10 @@ a:hover, .current, header a:hover  {
   color: #FFC400;
   background: #000000;
 }
+.paypal-btn:disabled, .paypal-btn[disabled] {
+  cursor: not-allowed;
+}
+
 
 /*  Mailchimp
 ---------------------------*/

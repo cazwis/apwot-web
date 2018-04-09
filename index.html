@@ -104,20 +104,20 @@
   -->
     
   <div class="button-wrap standard">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="hosted_button_id" value="U6WPVAPDE8RLW">
       <table>
       <tr><td class="print-only"><input type="hidden" name="on0" value="Issue No.1 + Shipping">Issue No.1 + Shipping</td></tr>
-      <tr><td><select name="os0">
-          <option value="" disabled selected>Select postage zone</option>
-          <option value="United Kingdom">United Kingdom (+£3) £23.00 GBP</option>
-          <option value="Europe">Europe (+£4) £24.00 GBP</option>
-          <option value="Rest of World">Rest of World (+£5) £25.00 GBP</option>
+      <tr><td><select name="os0" id="issue1_standard_select">
+        <option value="" disabled selected>Select postage zone</option>
+          <option value="United Kingdom">United Kingdom (+ £3) £23.00 GBP</option>
+          <option value="Europe">Europe (+ £4) £24.00 GBP</option>
+          <option value="Rest of World">Rest of World (+ £5) £25.00 GBP</option>
       </select> </td></tr>
       </table>
       <input type="hidden" name="currency_code" value="GBP">
-      <input type="submit" value="Pre-order" name="submit" title="Pre-order APWOT Issue One: Standard Edition" class="paypal-btn">
+      <input type="submit" value="Pre-order" name="submit" title="Pre-order APWOT Issue One: Standard Edition" class="paypal-btn" id="issue1_standard_button">
       <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
     </form>
   </div>
@@ -140,24 +140,41 @@
   </div>
     
   <div class="button-wrap special-edition">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="hosted_button_id" value="FNJYECGLP2ZDA">
       <table>
       <tr><td class="print-only"><input type="hidden" name="on0" value="Special Edition + Shipping">Special Edition + Shipping</td></tr>
-      <tr><td><select name="os0">
-          <option value="" disabled selected>Select postage zone</option>
-          <option value="United Kingdom">United Kingdom (+£3) £38.00 GBP</option>
-          <option value="Europe">Europe (+£4) £39.00 GBP</option>
-          <option value="Rest of World">Rest of World (+£5) £40.00 GBP</option>
+      <tr><td><select name="os0" id="issue1_special_select">
+        <option value="" disabled selected>Select postage zone</option>
+          <option value="United Kingdom">United Kingdom (+ £3) £38.00 GBP</option>
+          <option value="Europe">Europe (+ £4) £39.00 GBP</option>
+          <option value="Rest of World">Rest of World (+ £5) £40.00 GBP</option>
       </select> </td></tr>
       </table>
       <input type="hidden" name="currency_code" value="GBP">
-      <input type="submit" value="Pre-order" name="submit" title="Pre-order APWOT Issue One: Special Edition" class="paypal-btn">
+      <input type="submit" value="Pre-order" name="submit" title="Pre-order APWOT Issue One: Special Edition" class="paypal-btn" id="issue1_special_button">
       <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
     </form>
   </div>
 </div>
+
+<script>
+// Disable PayPal buttons until a shipping option is chosen
+  //Standard issue
+  $('#issue1_standard_button').prop('disabled', true);
+  $('#issue1_standard_select').on('change', function() {
+    // Change event fired..
+    $('#issue1_standard_button').prop('disabled', false);
+  });
+
+  // Special Edition issue
+  $('#issue1_special_button').prop('disabled', true);
+  $('#issue1_special_select').on('change', function() {
+    // Change event fired..
+    $('#issue1_special_button').prop('disabled', false);
+  });
+</script>
 
 <div id="about" class="grid-col col-1-1 left-indent mb-quad">
   <p><b>A Profound Waste of Time</b> is a new independent magazine that celebrates games as an art form. Each issue plays host to a rich variety of voices from inside and outside the videogame industry, interwoven with stunning imagery from leading illustrators and artists. Editorially discerning and beautifully designed, the magazine serves to celebrate gaming culture and discussion.</p>
@@ -173,12 +190,12 @@
 <!-- Start: Spread images -->
 <div class="spread-image grid-col col-1-1">
   <img itemprop="image" alt=""
-    src="/assets/2-apwot-spread-licensed-01-1200px.jpg"
+    src="/assets/2-apwot-spread-licensed-02-1200px.jpg"
     srcset="
-    /assets/2-apwot-spread-licensed-01-400px.jpg 400w,
-    /assets/2-apwot-spread-licensed-01-900px.jpg 900w,
-    /assets/2-apwot-spread-licensed-01-1200px.jpg 1200w,
-    /assets/2-apwot-spread-licensed-01-2400px.jpg 2400w"
+    /assets/2-apwot-spread-licensed-02-400px.jpg 400w,
+    /assets/2-apwot-spread-licensed-02-900px.jpg 900w,
+    /assets/2-apwot-spread-licensed-02-1200px.jpg 1200w,
+    /assets/2-apwot-spread-licensed-02-2400px.jpg 2400w"
     sizes="(min-width: 75rem) 75rem, 100vw">
 </div>
 
@@ -202,9 +219,9 @@
         <li>Perfect bound</li>
         <li>Litho print</li>
         <li>Printed on 150 gsm Munken Lynx</li>
-        <li>180 pages</li>
+        <li>Over 180 pages</li>
         <li>24 page cut down section</li>
-        <li>BIT.TRIP Risograph 198 x 250mm</li>
+        <li>BIT.TRIP Risograph 198 x 250 mm</li>
         <li>Over 30 writers and illustrators</li>
       </ul>
     </div>
@@ -213,9 +230,10 @@
       <h2 class="type-bold mb-single">In this issue</h2>
       <ul class="bullets">
         <li>An in depth interview with <b>Yacht Club&nbsp;Games</b></li>
-        <li>Undertale creator <b>Toby Fox</b> in conversation with composer <b>Jake Kaufman</b>, illustrated by <b>Temmie&nbsp;Chang</b></li>
+        <li>Undertale creator <b>Toby Fox</b> in conversation with composer <b>Jake Kaufman</b>, illustrated by artist and animator <b>Temmie&nbsp;Chang</b></li>
         <li>Writer and actor <b>Ashly Burch</b> reflects on her perfomance as Chloe in Life Is&nbsp;Strange</li>
         <li>A four-page fold-out Downwell diagram annotated by the game’s creator <b>Ojiro&nbsp;Fumoto</b></li>
+        <li>After watching his mother play her first videogame, Vlambeer co-founder <b>Rami Ismail</b> explores the idea of games as a&nbsp;language.</li>
         <li>Cover art by renowned illustrator <b>Dan&nbsp;Mumford</b></li>
       </ul>
     </div>
