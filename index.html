@@ -153,8 +153,8 @@
       </select> </td></tr>
       </table>
       <input type="hidden" name="currency_code" value="GBP">
-<!--       <input type="submit" value="Pre-order" name="submit" title="Pre-order APWOT Issue One: Special Edition" class="paypal-btn" id="issue1_special_button"> -->
-      <input type="submit" value="Sold out" name="submit" class="paypal-btn" disabled>
+       <input type="submit" value="Pre-order" name="submit" title="Pre-order APWOT Issue One: Special Edition" class="paypal-btn" id="issue1_special_button">
+      <!--<input type="submit" value="Sold out" name="submit" class="paypal-btn" disabled>-->
       <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
     </form>
   </div>
@@ -170,10 +170,10 @@
   });
 
   // Special Edition issue
-//  $('#issue1_special_button').prop('disabled', true);
-//  $('#issue1_special_select').on('change', function() {
+  $('#issue1_special_button').prop('disabled', true);
+  $('#issue1_special_select').on('change', function() {
     // Change event fired..
-//    $('#issue1_special_button').prop('disabled', false);
+    $('#issue1_special_button').prop('disabled', false);
   });
 </script>
 
