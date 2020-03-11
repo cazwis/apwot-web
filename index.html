@@ -42,11 +42,12 @@
 
 </head>
 
-<body id="top" class="homepage">
+<body id="top" class="homepage bg-yellow ">
 <div id="page">
 
+<!--[if lte IE 8]><div class="ie-only notice">As you may be aware, your browser is out of date so your experience may be limited. <a href="https://browser-update.org/update.html" target="_blank">Here's how to update</a>.</div><![endif]-->
+
 <header>
-<!--[if lte IE 8]><div class="ie-only notice">As you may be aware, your browser is out of date so your experience may be limited. <a href="https://browser-update.org/update.html" target="_blank">Here's how to update</a>. </div><![endif]-->
 <div class="grid-wrap clearfix">
 
 <div class="grid-col col-1-1 bp2-col-1-2 mb-single">
@@ -63,9 +64,11 @@
 <div class="grid-col col-1-1 bp2-col-1-2">
   <nav class="first">
     <ul>
-    <li><a href="#about" class="scroll">About</a></li>
-    <li><a href="#contact" class="scroll">Contact</a></li>
-    <li><a href="/newsletter" class="">Newsletter</a></li>
+      <li><a href="/#about" class="">About</a></li>
+      <li><a href="/issue-1" class="">Issue 1</a></li>
+      <li><a href="/issue-2" class="">Issue 2</a></li>
+      <li><a href="/#contact" class="">Contact</a></li>
+      <li><a href="/newsletter" class="">Newsletter</a></li>
     </ul>
   </nav>
 </div>
@@ -80,7 +83,7 @@
   
 <div class="grid-col col-1-1 bp2-col-1-2 mb-quad">
   <div class="issue-title">
-    <p><b>Issue One<br/>Standard&nbsp;Edition</b><br/>£20</p>
+    <p><b>Issue 1<br />Standard &amp; Special Editions</b><br/>£20-£35</p>
   </div>
   
   <img itemprop="image" alt="Magazine cover for standard version of A Profound Waste of Time gaming magazine"
@@ -104,28 +107,13 @@
   -->
     
   <div class="button-wrap standard">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="U6WPVAPDE8RLW">
-      <table>
-      <tr><td class="print-only"><input type="hidden" name="on0" value="Issue No.1 + Shipping">Issue No.1 + Shipping</td></tr>
-      <tr><td><select name="os0" id="issue1_standard_select">
-        <option value="" disabled selected>Select postage zone</option>
-          <option value="United Kingdom">United Kingdom (+ £3) £23.00 GBP</option>
-          <option value="Europe">Europe (+ £4) £24.00 GBP</option>
-          <option value="Rest of World">Rest of World (+ £5) £25.00 GBP</option>
-      </select> </td></tr>
-      </table>
-      <input type="hidden" name="currency_code" value="GBP">
-      <input type="submit" value="Order" name="submit" title="Order APWOT Issue One: Standard Edition" class="paypal-btn" id="issue1_standard_button">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-    </form>
+    <a href="issue-1" class="paypal-btn">Issue 1</a>
   </div>
 </div>
 
 <div class="grid-col col-1-1 bp2-col-1-2 mb-quad">
   <div class="issue-title">
-    <p><b>Issue One<br/>Special&nbsp;Glow in the Dark&nbsp;Edition</b><br/>£35</p>
+    <p><b>Issue 2<br />Standard &amp; Special Editions</b><br/>£20 &ndash; £35</p>
   </div>
   
   <div class="image-wrap">
@@ -139,42 +127,11 @@
       >
   </div>
     
-  <div class="button-wrap special-edition">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="FNJYECGLP2ZDA">
-      <table>
-      <tr><td class="print-only"><input type="hidden" name="on0" value="Special Edition + Shipping">Special Edition + Shipping</td></tr>
-      <tr><td><select name="os0" id="issue1_special_select">
-        <option value="" disabled selected>Select postage zone</option>
-          <option value="United Kingdom">United Kingdom (+ £3) £38.00 GBP</option>
-          <option value="Europe">Europe (+ £4) £39.00 GBP</option>
-          <option value="Rest of World">Rest of World (+ £5) £40.00 GBP</option>
-      </select> </td></tr>
-      </table>
-      <input type="hidden" name="currency_code" value="GBP">
-       <input type="submit" value="Order" name="submit" title="Order APWOT Issue One: Special Edition" class="paypal-btn" id="issue1_special_button">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-    </form>
+  <div class="button-wrap standard">
+    <a href="issue-2" class="paypal-btn">Issue 2</a>
   </div>
 </div>
 
-<script>
-// Disable PayPal buttons until a shipping option is chosen
-  //Standard issue
-  $('#issue1_standard_button').prop('disabled', true);
-  $('#issue1_standard_select').on('change', function() {
-    // Change event fired..
-    $('#issue1_standard_button').prop('disabled', false);
-  });
-
-  // Special Edition issue
-  $('#issue1_special_button').prop('disabled', true);
-  $('#issue1_special_select').on('change', function() {
-    // Change event fired..
-    $('#issue1_special_button').prop('disabled', false);
-  });
-</script>
 
 <div id="about" class="grid-col col-1-1 left-indent mb-quad">
   <p><b>A Profound Waste of Time</b> is a new independent magazine that celebrates games as an art form. Each issue plays host to a rich variety of voices from inside and outside the videogame industry, interwoven with stunning imagery from leading illustrators and artists. Editorially discerning and beautifully designed, the magazine serves to celebrate gaming culture and discussion.</p>
@@ -199,162 +156,7 @@
     sizes="(min-width: 75rem) 75rem, 100vw">
 </div>
 
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="Magazine spread of Shovel Knight section with smaller page dimensions"
-    src="/assets/3-apwot-spread-YCinsert-01-1200px.jpg"
-    srcset="
-    /assets/3-apwot-spread-YCinsert-01-400px.jpg 400w,
-    /assets/3-apwot-spread-YCinsert-01-900px.jpg 900w,
-    /assets/3-apwot-spread-YCinsert-01-1200px.jpg 1200w,
-    /assets/3-apwot-spread-YCinsert-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
 
-<div class="grid-col col-1-1 spec-creds">
-  <div class="grid-wrap" >
-    <div class="grid-col col-1-1 bp2-col-1-2 ">
-      <h2 class="type-bold mb-single">Specs</h2>
-      <ul class="bullets mb-single">
-        <li>210 x 270 mm</li>
-        <li>Perfect bound</li>
-        <li>Litho print</li>
-        <li>Printed on 150 gsm Munken Lynx</li>
-        <li>Over 180 pages</li>
-        <li>24 page cut down section</li>
-        <li>BIT.TRIP Risograph 198 x 250 mm</li>
-        <li>Over 30 writers and illustrators</li>
-      </ul>
-    </div>
-
-    <div class="grid-col col-1-1 bp2-col-1-2 ">
-      <h2 class="type-bold mb-single">In this issue</h2>
-      <ul class="bullets">
-        <li>An in depth interview with <b>Yacht Club&nbsp;Games</b></li>
-        <li>Undertale creator <b>Toby Fox</b> in conversation with composer <b>Jake Kaufman</b>, illustrated by artist and animator <b>Temmie&nbsp;Chang</b></li>
-        <li>Writer and actor <b>Ashly Burch</b> reflects on her perfomance as Chloe in Life Is&nbsp;Strange</li>
-        <li>A four-page fold-out Downwell diagram annotated by the game’s creator <b>Ojiro&nbsp;Fumoto</b></li>
-        <li>After watching his mother play her first videogame, Vlambeer co-founder <b>Rami Ismail</b> explores the idea of games as a&nbsp;language.</li>
-        <li>Cover art by renowned illustrator <b>Dan&nbsp;Mumford</b></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="Magazine spread of article on comparing game development to building a model spaceship"
-    src="/assets/6-apwot-spread-spaceship-01-1200px.jpg"
-    srcset="
-    /assets/6-apwot-spread-spaceship-01-400px.jpg 400w,
-    /assets/6-apwot-spread-spaceship-01-900px.jpg 900w,
-    /assets/6-apwot-spread-spaceship-01-1200px.jpg 1200w,
-    /assets/6-apwot-spread-spaceship-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
-
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="Magazine spread of article on the history of the Sega Technical Institute"
-    src="/assets/7-apwot-spread-STI-01-1200px.jpg"
-    srcset="
-    /assets/7-apwot-spread-STI-01-400px.jpg 400w,
-    /assets/7-apwot-spread-STI-01-900px.jpg 900w,
-    /assets/7-apwot-spread-STI-01-1200px.jpg 1200w,
-    /assets/7-apwot-spread-STI-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
-
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="Magazine spread of article exploring the concept of games as a language and culture"
-    src="/assets/8-apwot-spread-rami-01-1200px.jpg"
-    srcset="
-    /assets/8-apwot-spread-rami-01-400px.jpg 400w,
-    /assets/8-apwot-spread-rami-01-900px.jpg 900w,
-    /assets/8-apwot-spread-rami-01-1200px.jpg 1200w,
-    /assets/8-apwot-spread-rami-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
-
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="Magazine spread of article on the Yoshi series with still life photography"
-    src="/assets/9-apwot-spread-Yoshi-01-1200px.jpg"
-    srcset="
-    /assets/9-apwot-spread-Yoshi-01-400px.jpg 400w,
-    /assets/9-apwot-spread-Yoshi-01-900px.jpg 900w,
-    /assets/9-apwot-spread-Yoshi-01-1200px.jpg 1200w,
-    /assets/9-apwot-spread-Yoshi-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
-
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="Magazine spread of an illustrated map of the world of Owlboy"
-    src="/assets/1-apwot-spread-owlboy-01-1200px.jpg"
-    srcset="
-    /assets/1-apwot-spread-owlboy-01-400px.jpg 400w,
-    /assets/1-apwot-spread-owlboy-01-900px.jpg 900w,
-    /assets/1-apwot-spread-owlboy-01-1200px.jpg 1200w,
-    /assets/1-apwot-spread-owlboy-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
-
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="Magazine spread of an illustrated Specter of Torment Scene by Dan Mumford"
-    src="/assets/10-apwot-spread-specter-01-1200px.jpg"
-    srcset="
-    /assets/10-apwot-spread-specter-01-400px.jpg 400w,
-    /assets/10-apwot-spread-specter-01-900px.jpg 900w,
-    /assets/10-apwot-spread-specter-01-1200px.jpg 1200w,
-    /assets/10-apwot-spread-specter-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
-
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="Magazine spread opening of an article on the voice acting behind the character of Chloe in Life is Strange"
-    src="/assets/11-apwot-spread-life-is-strange-01-1200px.jpg"
-    srcset="
-    /assets/11-apwot-spread-life-is-strange-01-400px.jpg 400w,
-    /assets/11-apwot-spread-life-is-strange-01-900px.jpg 900w,
-    /assets/11-apwot-spread-life-is-strange-01-1200px.jpg 1200w,
-    /assets/11-apwot-spread-life-is-strange-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
-
-<div class="spread-image grid-col col-1-1">
-  <img itemprop="image" alt="An image showcasing the 6 colour risograph tip-in that comes with each issue of the magazine"
-    src="/assets/12-apwot-spread-riso-01-1200px.jpg"
-    srcset="
-    /assets/12-apwot-spread-riso-01-400px.jpg 400w,
-    /assets/12-apwot-spread-riso-01-900px.jpg 900w,
-    /assets/12-apwot-spread-riso-01-1200px.jpg 1200w,
-    /assets/12-apwot-spread-riso-01-2400px.jpg 2400w"
-    sizes="(min-width: 75rem) 75rem, 100vw">
-</div>
- <!--End: Spread images -->
-
- <!--Start: Downwell foldout -->
-<div class="grid-col col-1-2">
-  <img itemprop="image" alt=""
-    src="/assets/1-apwot-spread-downwellportraitclosed-01-900px.jpg"
-    srcset="
-    /assets/1-apwot-spread-downwellportraitclosed-01-400px.jpg 400w,
-    /assets/1-apwot-spread-downwellportraitclosed-01-900px.jpg 900w,
-    /assets/1-apwot-spread-downwellportraitclosed-01-1200px.jpg 1200w"
-    sizes="
-    (min-width: 75rem) 25rem,
-    (min-width: 48rem) calc(50vw-4rem),
-    calc(100vw-2rem)">
-</div>
-
-<div class="grid-col col-1-2">
-  <img itemprop="image" alt=""
-    src="/assets/1-apwot-spread-downwellportraitopen-01-1200px.jpg"
-    srcset="
-    /assets/1-apwot-spread-downwellportraitopen-01-400px.jpg 400w,
-    /assets/1-apwot-spread-downwellportraitopen-01-900px.jpg 900w,
-    /assets/1-apwot-spread-downwellportraitopen-01-1200px.jpg 1200w"
-    sizes="
-    (min-width: 75rem) 25rem,
-    (min-width: 48rem) calc(50vw-4rem),
-    calc(100vw-2rem)">
-</div>
-<!-- Start: Downwell foldout -->
 
 </div><!-- end .grid-wrap for main -->
 </main>

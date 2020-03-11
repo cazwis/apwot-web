@@ -61,9 +61,9 @@ Colours:
  
 
 html {
- height:100%;
- min-height:100%;
- overflow-y: scroll;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
  }
 body {
   height: 100%;
@@ -75,7 +75,7 @@ body {
   font-feature-settings: "liga" 0, "clig" 0;
   -webkit-font-smoothing: antialiased;
   color: #000000;
-  background-color: #FFC400;
+  scroll-behavior: smooth;
 }
 img {
   width: 100%;
@@ -92,6 +92,33 @@ img.no-max {
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
+
+
+
+/* Colour Themes
+---------------------------*/
+.bg-yellow {
+  background-color: #FFC400;
+}
+.bg-yellow .paypal-btn,
+.bg-yellow .submit-button,
+.bg-yellow #mc_embed_signup input
+{
+  color: #FFC400;
+}
+
+.bg-pink {
+  background-color: #FF7387;
+}
+.bg-pink .paypal-btn,
+.bg-pink .submit-button,
+.bg-pink #mc_embed_signup input
+{
+  color: #FF7387;
+}
+
+
+
 
 /* Header, Homepage,  Footer
 ---------------------------*/
@@ -236,7 +263,8 @@ a:hover, .current, header a:hover  {
 .paypal-btn {
   min-width: 100%;
   display: inline-block;
-  color: #FFC400;
+  color: #FFF;
+  background: #000000;
   font-size: inherit;
   font-family: 'Soleil-Bold', Verdana, sans-serif;
   line-height: 1;
@@ -255,13 +283,12 @@ a:hover, .current, header a:hover  {
   height: 1.75rem;
   border-radius: 0;
 }
-.standard .paypal-btn,
-.special-edition .paypal-btn,
-#mc_embed_signup .submit-button,
+
+.submit-button,
 #mc_embed_signup input {
-  color: #FFC400;
   background: #000000;
 }
+
 .paypal-btn:disabled, .paypal-btn[disabled] {
   cursor: not-allowed;
 }
@@ -363,8 +390,10 @@ nav.first {
   right: 2rem;
   bottom: 2rem;
 }
-.homepage footer {
+.issue-1 footer {
   margin-top: -10rem;
+}
+.homepage footer {
   padding-right: 5rem;
 }
 }
