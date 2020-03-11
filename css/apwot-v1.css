@@ -212,6 +212,10 @@ p:last-child {
 p {
   max-width: 50rem;
 }
+.quote p {
+  margin-left: auto;
+  margin-right: auto;
+}
 .left-indent p {
   margin-left: auto;
   margin-right: auto;
@@ -231,8 +235,10 @@ a {
 a:hover, .current, header a:hover  {
   color: #2A53A1;
 }
-.issue-title {
+.type-center {
   text-align: center;
+}
+.type-large {
   font-size: 1.65rem;
   line-height: 1.2;
 }
