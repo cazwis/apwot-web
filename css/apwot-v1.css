@@ -117,8 +117,15 @@ img.no-max {
   color: #FF7387;
 }
 
-
-
+.bg-blue {
+  background-color: #5da0e7;
+}
+.bg-blue .paypal-btn,
+.bg-blue .submit-button,
+.bg-blue #mc_embed_signup input
+{
+  color: #5da0e7;
+}
 
 /* Header, Homepage,  Footer
 ---------------------------*/
@@ -187,7 +194,7 @@ nav li:last-child {
   top: 0;
   left: 0;
 }
-.first-image:hover {
+.img-swap:hover .first-image {
   opacity: 0;
   cursor: pointer;
 }
@@ -196,7 +203,7 @@ nav li:last-child {
   padding: 3rem 1rem;
 }
 .spread-image {
-  margin-bottom: 0 !important;
+  /*margin-bottom: 0 !important;*/
 }
 
 
@@ -242,11 +249,17 @@ a:hover, .current, header a:hover  {
   font-size: 1.65rem;
   line-height: 1.2;
 }
+.type-uppercase {
+  text-transform: uppercase;
+}
 .bullets {
   list-style: initial;
 }
 .bullets li {
   margin-left: 1rem;
+}
+.quote {
+  margin: 2rem auto;
 }
 
 /*  PayPal
@@ -375,7 +388,10 @@ nav.first {
   float: right;
   margin: -0.25rem 1rem 0 0;
 }
-.issue-title {
+.type-large .quote {
+  font-size: 2.5rem;
+}
+.issue-1 .issue-title {
   height: 7rem;
 }
 .spec-creds {
@@ -396,7 +412,7 @@ nav.first {
   right: 2rem;
   bottom: 2rem;
 }
-.issue-1 footer {
+.homepage footer {
   margin-top: -10rem;
 }
 .homepage footer {
