@@ -397,7 +397,7 @@ nav.first {
   margin-top: -0.25rem;
 }
 nav li:nth-of-type(3) {
-  padding-right: 1rem;
+  padding-right: calc(50vw - 16rem);
 }
 .type-large .quote {
   font-size: 2.5rem;
@@ -430,6 +430,15 @@ nav li:nth-of-type(3) {
   padding-right: 5rem;
 }
 }
+
+/* Breakpoint 2.5 - Fix for nav
+------------------------------------------------------------- */
+@media only screen and (min-width: 55.5em) {
+nav li:nth-of-type(3) {
+  padding-right: 1rem;
+}
+}
+
 
 /* -- Breakpoint 3 (.bp3)
 ------------------------------------------------------------- */
