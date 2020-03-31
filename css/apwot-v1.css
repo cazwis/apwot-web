@@ -65,6 +65,7 @@ html {
   min-height: 100%;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  --scroll-behavior: smooth;
  }
 body {
   height: 100%;
