@@ -101,6 +101,7 @@ img.no-max {
 .bg-yellow {
   background-color: #FFC400;
 }
+.text-yellow,
 .bg-yellow .paypal-btn,
 .bg-yellow .submit-button,
 .bg-yellow #mc_embed_signup input
@@ -126,6 +127,10 @@ img.no-max {
 .bg-blue #mc_embed_signup input
 {
   color: #5da0e7;
+}
+
+.bg-blue-dark {
+  background-color: #2A53A1;
 }
 
 /* Header, Homepage,  Footer
@@ -355,7 +360,7 @@ a:hover, .current, header a:hover  {
 .call-to-action {
   text-align: center;
   margin: 2rem auto;
-  border: 0.25rem solid;
+  /*border: 0.25rem solid;*/
   padding: 2rem;
   /*max-width: 32rem;*/
 }
