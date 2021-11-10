@@ -323,12 +323,7 @@ a:hover, .current, header a:hover  {
   cursor: not-allowed;
   background-color: #444;
 }
-a.paypal-btn {
-  background-color: #444;
-}
-a:hover.paypal-btn {
-  background: #000000;
-}
+
 
 
 /*  Mailchimp
