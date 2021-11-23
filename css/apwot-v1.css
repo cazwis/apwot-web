@@ -108,7 +108,9 @@ img.no-max {
 {
   color: #FFC400;
 }
-
+.text-pink {
+  color: #FF7387;
+}
 .bg-pink {
   background-color: #FF7387;
 }
@@ -132,7 +134,9 @@ img.no-max {
 .bg-blue-dark {
   background-color: #2A53A1;
 }
-
+.bg-black {
+  background-color: #000000;
+}
 /* Header, Homepage,  Footer
 ---------------------------*/
 #page {
@@ -362,11 +366,13 @@ a:hover, .current, header a:hover  {
   margin: 2rem auto;
   /*border: 0.25rem solid;*/
   padding: 2rem;
-  /*max-width: 32rem;*/
+  max-width: 62rem;
+  border-radius: 0.5rem;
 }
 .call-to-action p {
   /*text-align: left;*/
   max-width: initial;
+  font-weight: 600;
 }
 
 /* ------------------------------------------------------------
