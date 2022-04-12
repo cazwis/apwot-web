@@ -163,9 +163,6 @@ nav li {
 nav li:last-child {
   padding-right: 0;
 }
-nav li:nth-of-type(3) {
-  padding-right: calc(100vw - 16rem);
-}
 .logo-wrap {
   max-width: 75%;
 }
@@ -383,73 +380,61 @@ a:hover, .current, header a:hover  {
 -- Same as above, but each class has ".bp1-" prefix
 ------------------------------------------------------------- */
 @media only screen and (min-width: 30em) {
-.shop-cover-image {
-  padding: 3rem;
-}
-.button-wrap {
-  padding: 0 4.5rem;
-}
-
-
+  .shop-cover-image {
+    padding: 3rem;
+  }
+  .button-wrap {
+    padding: 0 4.5rem;
+  }
 }
 /* -- Breakpoint (.bp2)
 ------------------------------------------------------------- */
 @media only screen and (min-width: 48em) {
-#page {
-  padding: 2rem;
-}
-header {
-  margin-bottom: 3rem;
-}
-main .grid-col {
-  margin-bottom: 2rem;
-}
-nav.first {
-  float: right;
-  margin-top: -0.25rem;
-}
-nav li:nth-of-type(3) {
-  padding-right: calc(50vw - 16rem);
-}
-.type-large .quote {
-  font-size: 2.5rem;
-}
-.issue-1 .issue-title {
-  height: 7rem;
-}
-.spec-creds {
-  margin-left: 4rem;
-  padding-right: 8rem;
-}
-.left-border {
-  border-left: 0.25rem solid;
-}
-.button.standard, .button.special-edition {
-  /*background: #001B2B;*/
-  color: #FFC400;
-}
-.avatar-icon {
-  /*float: right;*/
-  /*margin-top: -4.75rem;*/
-  width: 4rem;
-  right: 2rem;
-  bottom: 2rem;
-}
-.homepage footer {
-  margin-top: -10rem;
-}
-.homepage footer {
-  padding-right: 5rem;
-}
+  #page {
+    padding: 2rem;
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+  main .grid-col {
+    margin-bottom: 2rem;
+  }
+  nav.first {
+    float: right;
+    margin-top: -0.25rem;
+  }
+  .type-large .quote {
+    font-size: 2.5rem;
+  }
+  .issue-1 .issue-title {
+    height: 7rem;
+  }
+  .spec-creds {
+    margin-left: 4rem;
+    padding-right: 8rem;
+  }
+  .left-border {
+    border-left: 0.25rem solid;
+  }
+  .button.standard, .button.special-edition {
+    /*background: #001B2B;*/
+    color: #FFC400;
+  }
+  .avatar-icon {
+    /*float: right;*/
+    /*margin-top: -4.75rem;*/
+    width: 4rem;
+    right: 2rem;
+    bottom: 2rem;
+  }
+  .homepage footer {
+    margin-top: -10rem;
+  }
+  .homepage footer {
+    padding-right: 5rem;
+  }
 }
 
-/* Breakpoint 2.5 - Fix for nav
-------------------------------------------------------------- */
-@media only screen and (min-width: 55.5em) {
-nav li:nth-of-type(3) {
-  padding-right: 1rem;
-}
-}
 
 
 /* -- Breakpoint 3 (.bp3)
@@ -459,10 +444,10 @@ nav li:nth-of-type(3) {
 }
 
 @media only screen and (min-width: 85em) {
-.avatar-icon {
-  right: unset;
-  left: calc(50% + 29em);
-}
+  .avatar-icon {
+    right: unset;
+    left: calc(50% + 29em);
+  }
 }
 
 /* -- Breakpoint 4 (.bp4)
@@ -477,35 +462,35 @@ nav li:nth-of-type(3) {
 /* Print specific styles
 ------------------------------------------------------------- */
 @media print {
-/* Styles */
-.print-only {
-  display: block;
-}
-.print-none {
-  display: none;
-}
-* {
-  -webkit-print-color-adjust: exact;
-  background-color: none;
-  color: #000000 !important;
-  font-size: 18pt;
-}
-a {
-  color: #666666 !important;
-  text-decoration: none !important;
-  border-bottom: none;
-}
-a:after {
-  font-size: 10pt;
-  content: " [" attr(href) "]";
-  font-family: monospace;
-  word-wrap: break-word;
-}
-
-img {
-  display: block;
-  page-break-inside: avoid !important;
-}
+  /* Styles */
+  .print-only {
+    display: block;
+  }
+  .print-none {
+    display: none;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    background-color: none;
+    color: #000000 !important;
+    font-size: 18pt;
+  }
+  a {
+    color: #666666 !important;
+    text-decoration: none !important;
+    border-bottom: none;
+  }
+  a:after {
+    font-size: 10pt;
+    content: " [" attr(href) "]";
+    font-family: monospace;
+    word-wrap: break-word;
+  }
+  
+  img {
+    display: block;
+    page-break-inside: avoid !important;
+  }
 
 
 }
