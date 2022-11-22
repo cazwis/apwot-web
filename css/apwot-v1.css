@@ -212,13 +212,12 @@ nav li:last-child {
 .img-swap-auto .first-image {
   animation: img-swap-auto 5s ease infinite;
   opacity: 0;
-  /*transition-property: opacity;*/
+  animation-direction: normal;
 }
 @keyframes img-swap-auto {
   0%   { opacity: 0; }
-  10%  { opacity: 1; }
-  40%  { opacity: 1; }
-  50%  { opacity: 0; }
+  50%  { opacity: 1; }
+  60%  { opacity: 1; }
   100% { opacity: 0; }
 }
 .shop-cover-image {
