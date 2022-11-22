@@ -209,6 +209,18 @@ nav li:last-child {
   opacity: 0;
   cursor: pointer;
 }
+.img-swap-auto .first-image {
+  animation: img-swap-auto 5s ease infinite;
+  opacity: 0;
+  /*transition-property: opacity;*/
+}
+@keyframes img-swap-auto {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  40%  { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 0; }
+}
 .shop-cover-image {
   width: 100%;
   padding: 3rem 1rem;
