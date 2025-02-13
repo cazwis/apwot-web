@@ -49,6 +49,18 @@ input { -webkit-border-radius:0; border-radius:0; -webkit-appearance: none; -moz
         html {-ms-text-size-adjust: none; -webkit-text-size-adjust: none; }     }
 .clearfix:after {  content: "."; visibility: hidden; display: block;  height: 0; clear: both; }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 
 /* iOS rotation fix: iOS<6 has a bug that zooms on device rotation
 via https://gist.github.com/sergiolopes/1935528

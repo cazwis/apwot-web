@@ -126,6 +126,15 @@ img.no-max {
   color: #50e1c2;
 }
 
+/* Issue 4 */
+.bg-152323 {
+  background-color: #152323;
+}
+.text-cfdada {
+    color: #cfdada;
+}
+
+
 /* Newsletter */
 .bg-blue {
   background-color: #5da0e7;
@@ -174,12 +183,6 @@ nav li:last-child {
 }
 .logo-wrap {
   max-width: 75%;
-}
-.logo {
-
-}
-.logo span {
-  display: none;
 }
 .avatar-icon {
   /*margin-top: 1rem;*/
@@ -270,9 +273,22 @@ a {
   text-decoration: none;
   border-bottom: 1px solid;
 }
-a:hover, .current, header a:hover  {
+a:hover ,
+.current,
+nav a:hover {
   color: #2A53A1;
 }
+.text-cfdada a:hover,
+.text-cfdada .current,
+.text-cfdada header a:hover  {
+  color: #6492e7;
+}
+a.logo:hover {
+    color: currentColor;
+}
+
+
+
 .type-center {
   text-align: center;
 }
