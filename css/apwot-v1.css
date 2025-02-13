@@ -7,15 +7,7 @@ URL     : wesort.co.uk
 Twitter : @we_sort
 */
 
-/* 		This stylesheet builds on top of reset-n-grid.css
-Colours:
-  White: #FFFFFF
-  Deep Blue: #001B2B
-  Peach: #E87570
-  Teal: #2E7484
-  Candel yellow: #FBD793
-  
----------------------------*/
+/* This stylesheet builds on top of reset-n-grid.css */
 
 /**
  * @license
@@ -50,15 +42,15 @@ Colours:
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/32d1db");
 
-  
+
 @font-face {font-family: 'TwCenMTStd-Bold';src: url('/assets/webfonts/32D1DB_0_0.eot');src: url('/assets/webfonts/32D1DB_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_0_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_0_0.woff') format('woff'),url('/assets/webfonts/32D1DB_0_0.ttf') format('truetype');}
- 
-  
+
+
 @font-face {font-family: 'Soleil-Bold';src: url('/assets/webfonts/32D1DB_1_0.eot');src: url('/assets/webfonts/32D1DB_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_1_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_1_0.woff') format('woff'),url('/assets/webfonts/32D1DB_1_0.ttf') format('truetype');}
- 
-  
+
+
 @font-face {font-family: 'Soleil';src: url('/assets/webfonts/32D1DB_2_0.eot');src: url('/assets/webfonts/32D1DB_2_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_2_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_2_0.woff') format('woff'),url('/assets/webfonts/32D1DB_2_0.ttf') format('truetype');}
- 
+
 
 html {
   height: 100%;
@@ -95,9 +87,10 @@ img.no-max {
 }
 
 
-
 /* Colour Themes
 ---------------------------*/
+
+/* Issue 1 */
 .bg-yellow {
   background-color: #FFC400;
 }
@@ -108,12 +101,12 @@ img.no-max {
 {
   color: #FFC400;
 }
-.text-pink {
-  color: #FF7387;
-}
+
+/* Issue 2 */
 .bg-pink {
   background-color: #FF7387;
 }
+.text-pink,
 .bg-pink .paypal-btn,
 .bg-pink .submit-button,
 .bg-pink #mc_embed_signup input
@@ -121,9 +114,23 @@ img.no-max {
   color: #FF7387;
 }
 
+/* Issue 3 */
+.bg-aqua {
+  background-color: #50e1c2;
+}
+.text-aqua,
+.bg-aqua .paypal-btn,
+.bg-aqua .submit-button,
+.bg-aqua #mc_embed_signup input
+{
+  color: #50e1c2;
+}
+
+/* Newsletter */
 .bg-blue {
   background-color: #5da0e7;
 }
+.text-blue,
 .bg-blue .paypal-btn,
 .bg-blue .submit-button,
 .bg-blue #mc_embed_signup input
@@ -137,6 +144,8 @@ img.no-max {
 .bg-black {
   background-color: #000000;
 }
+
+
 /* Header, Homepage,  Footer
 ---------------------------*/
 #page {
@@ -497,7 +506,7 @@ a:hover, .current, header a:hover  {
     font-family: monospace;
     word-wrap: break-word;
   }
-  
+
   img {
     display: block;
     page-break-inside: avoid !important;
