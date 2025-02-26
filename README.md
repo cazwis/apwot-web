@@ -4,7 +4,7 @@
 
 ### Team
 - Client & designer: Caspian Whistler [cas@apwot.com](mailto:cas@apwot.com)
-- Developer:
+- Developer: Ben Edmonds of [We Sort](https://wesort.co.uk) | [ben@wesort.co.uk](mailto:ben@wesort.co.uk)
 
 ### Technical
 - A static site with no build process
